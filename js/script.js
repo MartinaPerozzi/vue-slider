@@ -47,7 +47,7 @@ const app = Vue.createApp({
         },
 
         stopAutoPlay() {
-            doAutoplay = false;
+            this.movie.doAutoplay = false;
             // clearInterval();
         }
 
@@ -58,7 +58,7 @@ const app = Vue.createApp({
             if (doAutoplay = true) {
                 this.nextSlide();
             } else {
-                clearInterval();
+                this.clearInterval();
             }
 
         }, 2000)
