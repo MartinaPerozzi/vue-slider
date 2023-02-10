@@ -49,7 +49,8 @@
 			</header>
 			<!-- Container per Immagini -->
 			<div class="items">
-				<img :src="movie.images[movie.activeImage]" alt="Immagini entertainment" @click="stopAutoplay()">
+				<img :src="movie.images[movie.activeImage]" alt="Immagini entertainment" @click="stopAutoplay()"
+					:class="(movie.images[3]? 'object-fit': '')">
 
 			</div>
 			<!-- CONTROLS -->

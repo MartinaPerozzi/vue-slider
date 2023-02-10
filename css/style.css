@@ -81,6 +81,7 @@ img {
 
 .row-thumb>* {
     height: 100%;
+    padding: 1px;
 }
 
 /* ICON */
@@ -106,6 +107,6 @@ img {
     border: 3px solid blue;
 }
 
-.object-fit>img {
-    object-position: left;
+.object-fit {
+    object-position: 84%;
 }
