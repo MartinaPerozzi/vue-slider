@@ -1,0 +1,108 @@
+.slider {
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+}
+
+/* Text */
+.text-space {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    border-radius: 1rem 1rem 0rem 0rem;
+    box-shadow:
+        0px 0.7px 2px rgba(0, 0, 0, 0.017),
+        0px 1.7px 4.9px rgba(0, 0, 0, 0.026),
+        0px 3.1px 9.1px rgba(0, 0, 0, 0.032),
+        0px 5.6px 16.3px rgba(0, 0, 0, 0.037),
+        0px 10.4px 30.5px rgba(0, 0, 0, 0.044),
+        0px 25px 73px rgba(0, 0, 0, 0.07);
+
+}
+
+.items {
+    width: 300px;
+    height: 500px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 160px;
+    color: white;
+    font-size: 4rem;
+}
+
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.active {
+    display: block;
+}
+
+.title-text {
+    position: absolute;
+    bottom: 30px;
+    left: 300px;
+    color: white;
+    right: 30px;
+}
+
+.row-thumb {
+    height: 50px;
+    width: 300px;
+    margin: 0px;
+}
+
+.row-thumb img {
+    height: 100%;
+    object-fit: cover;
+    padding: 1px;
+}
+
+.row-thumb>* {
+    height: 100%;
+}
+
+/* ICON */
+.player-icon {
+    font-size: 2.5rem;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.slider img {
+    border-radius: 1rem;
+}
+
+.title-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 1rem;
+    ;
+}
+
+.border-active {
+    border: 3px solid blue;
+}
