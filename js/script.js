@@ -1,3 +1,4 @@
+
 // Configurazione Vue
 const app = Vue.createApp({
     data: function () {
@@ -14,6 +15,7 @@ const app = Vue.createApp({
                 ],
 
                 activeImage: 0,
+                doAutoplay: true,
             }
 
 
@@ -44,16 +46,21 @@ const app = Vue.createApp({
             this.movie.activeImage = index;
         },
 
-        stopAutoplay() {
-            clearInterval(autoplay);
-
+        stopAutoPlay() {
+            doAutoplay = false;
+            // clearInterval();
         }
 
     },
 
     created() {
-        const autoplay = setInterval(() => {
-            this.nextSlide();
+        setInterval(() => {
+            if (doAutoplay = true) {
+                this.nextSlide();
+            } else {
+                clearInterval();
+            }
+
         }, 2000)
 
     },

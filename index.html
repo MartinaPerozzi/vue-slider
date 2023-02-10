@@ -39,7 +39,7 @@
 	<div id="root" class="container contain-carousel p-3">
 		<!-- HEADER -->
 		<!-- SLIDER -->
-		<div class="slider">
+		<div class="slider" @click="stopAutoPlay()">
 			<header class="container text-center mt-3 ps-5 pe-5 d-flex">
 				<div class="text-space d-flex flex-column pt-2">
 					<h5>{{movie.title}}</h5>
@@ -49,7 +49,7 @@
 			</header>
 			<!-- Container per Immagini -->
 			<div class="items">
-				<img :src="movie.images[movie.activeImage]" alt="Immagini entertainment" @click="stopAutoplay()"
+				<img :src="movie.images[movie.activeImage]" alt="Immagini entertainment"
 					:class="(movie.images[3]? 'object-fit': '')">
 
 			</div>
