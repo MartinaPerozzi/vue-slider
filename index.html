@@ -61,9 +61,11 @@
 			<!-- THUMBNAILS -->
 
 			<div class="row-thumb row row-cols-5 mt-1">
+				<div v-for="(image, imageIndex) in movie.images">
 
-				<img :src="image" v-for="(image, imageIndex) in movie.images" alt="immagini novità entertainment"
-					:class="(imageIndex==movie.activeImage)? 'border-active': ''" @click="switchImage(imageIndex)">
+					<img :src="image" alt="immagini novità entertainment"
+						:class="(imageIndex==movie.activeImage)? 'border-active': ''" @click="switchImage(imageIndex)">
+				</div>
 
 			</div>
 
